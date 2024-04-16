@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+ char str[] = "Namjoon";
+ int i =0, count=0;
+ while(str[i]!='\0'){
+
+    printf("%c\n",str[i]); //printing single character that's why %c
+    i++;
+     
+ }
+   printf("Length = %d",count);  
+
+return 0;
+}
