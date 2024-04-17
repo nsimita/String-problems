@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+ char str[100] ;
+ printf("enter the string: ");
+ gets(str);
+ int len=0;
+   len = strlen(str); //calculates the size of string given by user
+  printf("%d\n",len);
+
+ int i = len ;
+ while(i>0){
+
+    printf("%c\n",str[i]); //printing single character that's why %c
+    i--;
+
+ }
+
