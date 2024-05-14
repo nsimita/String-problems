@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    char str[100]; 
+    gets(str);
+     
+    int j,i;
+    for(  i=0; str[i]!='\0';i++){
+        
+        if(str[i]=='A'||str[i]=='a'||str[i]=='e'||str[i]=='E'||
+        str[i]=='i'||str[i]=='O'||str[i]=='I'||str[i]=='o'||str[i]=='U'||str[i]=='u'){
+            if(str[i+1]==str[i]){
+                for(j=i+1;str[j]==str[i];j++){
+                    str[j]= str[j+1];
+                }
+               
+               i--;
+            }
+             
+                
+            
+             }
+        
+           
+         }
+    
+    printf("%s",str);
+
+    return 0;
+}
+ 
